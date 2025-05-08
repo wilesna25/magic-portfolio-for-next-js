@@ -1,15 +1,17 @@
 import { InlineCode } from "@/once-ui/components";
+import { language } from "gray-matter";
 
 const person = {
   firstName: "ASAUCACOL",
-  lastName: "Yu",
+  lastName: "",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Asociación de Autocultivadores de Cannabis de Colombia",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "America/Bogota", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages : []
+  // languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -52,18 +54,18 @@ const home = {
   label: "Inicio",
   title: `${person.name}`,
   description: `Uso adulto del cannabis,`,
-  headline: <>Design engineer and builder</>,
+  headline: <>ASAUCACOL</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      ASOCIACIÓN DE <InlineCode>AUTOCULTIVADORES</InlineCode> DE COLOMBIA
+      <br />
     </>
   ),
 };
 
 const about = {
-  label: "About",
-  title: "About me",
+  label: "Nosotros",
+  title: "Nosotros",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -81,9 +83,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Somos un grupo de autocultivadores de diferentes regiones del país, dedicados a diversas profesiones y actividades además del autocultivo de cannabis unidos por diversas necesidades  y propósitos. Nuestra intención fundamental es incidir en la nueva política pública para el uso adulto del cannabis y velar por los derechos de los autocultivadores y usuarios, teniendo en cuenta la ley actual. Nos enfocamos en la sensibilización de la población colombiana para que el ejercicio de autocultivo sea el puente que ayude a disminuir el estigma y la falta de conocimiento de las propiedades del cannabis y su uso integral.
       </>
     ),
   },
@@ -97,13 +97,68 @@ const about = {
         role: "Senior Design Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+Espacios weedfriendly para uso adulto del autocultivo
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+Servicios de jardinería 
           </>,
+          <>
+Consulta médica y psicológica
+          </>,
+          <>
+Asesoría jurídica para usuarios y empresarios
+          </>,
+          <>
+Acceso a  catas y experiencias cannabicas en espacios weedfriendly
+          </>,
+          <>
+Participación en eventos, ferias y congresos 
+          </>,
+          <>
+Servicio de jardinería, consultoría especializada  y seguimiento continuo 
+          </>,
+          <>
+Vitrina comercial para su emprendimiento y/o empresa en nuestra página web https://www.asaucacol.co
+          </>,
+          <>
+Difusión de productos y/o servicios en nuestras redes sociales.
+          </>,
+          <>
+Participación en eventos y ferias.
+          </>,
+          <>
+Capacitación informal  por parte de las empresas aliadas.
+          </>,
+          <>
+Soluciones logísticas para distribuidores, proveedores y fabricantes. https://dropi.co/ Contamos con alianzas comerciales con 6 transportadoras: envía, coordinadora, interapidisimo,   domina, 90 minutos y servientrega, gracias a este convenio institucional tenemos costos de fletes más bajos que las ofertadas en el mercado tradicional.
+          </>,
+          <>
+Consulta y prescripción médica para porte y consumo de flores.
+          </>,
+          <>
+
+Sannabis  https://www.sannabis.co/  30% de descuento, + 5 ml de aceite de oliva full espectro de cbd al 20%, control terapéutico cada 6 meses con el 50% de descuento.
+          </>,
+          <>
+Valor: $150.000
+          </>,
+          <>
+
+Asesoría especializada en el todo el proceso de autocultivo                                                         - Operador terapéutico en adicciones 
+          </>,
+          <>
+Psicoeducación sobre drogas y prevención de sustancias psicoactivas 
+Pautas en medios de comunicación
+          </>,
+          <> 
+Red de aliados empresariales la cual brindan servicios y beneficios adicionales a nuestros miembros activos.
+          </>,
+          <>
+
+      Linea  de atención psicológica Asaucacol
+          </>,
+          <>
+          </>
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -111,7 +166,8 @@ const about = {
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
             width: 16,
-            height: 9,
+           // height: 9,
+           height: 6,
           },
         ],
       },
@@ -188,24 +244,24 @@ const about = {
 };
 
 const blog = {
-  label: "Blog",
-  title: "Writing about design and tech...",
+  label: "Vincúlate",
+  title: "Vincúlate",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const work = {
-  label: "Work",
-  title: "My projects",
+  label: "Servicios",
+  title: "Servicios",
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
 
 const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
+  label: "Tienda",
+  title: "Tienda",
   description: `A photo collection by ${person.name}`,
   // Images from https://pexels.com
   images: [

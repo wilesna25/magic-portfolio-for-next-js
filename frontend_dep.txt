@@ -1,0 +1,24 @@
+@floating-ui/react-dom: This is directly related to UI. It's the React integration for the Floating UI library, which is used for positioning floating elements like tooltips, popovers, and dropdowns.
+
+next: While Next.js is a full-stack framework, a significant part of its functionality is for rendering and managing the user interface with React.
+
+react: This is the core React library, fundamental for building component-based UIs.
+
+react-dom: This package provides the entry point to the DOM and server-side rendering functionality for React applications.
+
+react-icons: This library provides a vast collection of icons that can be easily used as React components in the UI.
+
+react-masonry-css: This library is used for creating masonry layouts, which are often used for displaying collections of items in a visually appealing way on the UI.
+
+sass: While Sass is a CSS preprocessor, it's heavily used for styling UI components and defining the visual appearance of the application.
+
+classnames: This utility library helps in dynamically applying CSS classes to React components, making it easier to manage UI styling based on different conditions.
+
+The following dependencies are more related to other aspects of the application:
+
+@mdx-js/loader, @next/mdx, next-mdx-remote, gray-matter, remark, remark-html: These are all related to handling and rendering MDX (Markdown with JSX) content, which might be part of the UI (like documentation or blog posts) but aren't UI component libraries themselves.
+cookie: This library is for handling HTTP cookies, usually related to authentication or user sessions, not directly UI rendering.
+postcss, postcss-preset-env, @csstools/postcss-global-data, postcss-custom-media, postcss-flexbugs-fixes: These are PostCSS plugins used for transforming CSS, which indirectly affects the UI styling but aren't UI components.
+prismjs: This is a syntax highlighter, often used to style code snippets displayed in the UI.
+sharp: This is a library for image processing, which might be used to optimize images displayed in the UI.
+@types/... and typescript: These are related to TypeScript support and type definitions, which improve the development experience but don't directly contribute to the UI at runtime.
